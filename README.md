@@ -3,6 +3,21 @@ Get top submissions of various subreddits. Built for weekly updates.
 
 ***I typically don't put comments in the code because it gets in the way of reading. Python code should be self-explanatory.*** Instead, all resources are dumped into docs. Helpful documents below and challenges (more like thoughts) I went through.
 
+```Agate
+ubuntu@ip-172-31-28-143:~/GitHub/Reddit-Bot$ make
+export PYTHONPATH=/home/ubuntu/GitHub/Reddit-Bot && cd _src && python3 reddit_bot.py
+Sucessfully authenticated into Reddit
+[2018-03-12 01:42:09,216] [DEBUG] Fetching: GET https://oauth.reddit.com/r/cscareerquestions/top
+[2018-03-12 01:42:09,216] [DEBUG] Data: None
+[2018-03-12 01:42:09,217] [DEBUG] Params: {'t': 'week', 'raw_json': 1, 'limit': 25}
+[2018-03-12 01:42:09,219] [INFO] Starting new HTTPS connection (1): www.reddit.com
+[2018-03-12 01:42:09,259] [DEBUG] "POST /api/v1/access_token HTTP/1.1" 200 105
+[2018-03-12 01:42:09,262] [INFO] Starting new HTTPS connection (1): oauth.reddit.com
+[2018-03-12 01:42:09,436] [DEBUG] "GET /r/cscareerquestions/top?t=week&raw_json=1&limit=25 HTTP/1.1" 200 26123
+[2018-03-12 01:42:09,438] [DEBUG] Response: 200 (26123 bytes)
+Email sent!
+```
+
 ---
 
 # HOW TO RUN
