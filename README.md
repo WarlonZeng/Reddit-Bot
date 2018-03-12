@@ -3,7 +3,7 @@ Get top submissions of various subreddits. Built for weekly updates.
 
 ***I typically don't put comments in the code because it gets in the way of reading. Python code should be self-explanatory.*** Instead, all resources are dumped into docs. Helpful documents below and challenges (more like thoughts) I went through.
 
-```cpp
+```accesslog
 ubuntu@ip-172-31-28-143:~/GitHub/Reddit-Bot$ make
 export PYTHONPATH=/home/ubuntu/GitHub/Reddit-Bot && cd _src && python3 reddit_bot.py
 Sucessfully authenticated into Reddit
