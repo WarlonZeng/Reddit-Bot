@@ -6,7 +6,7 @@ def get_submissions_text(submissions):
     n = 1
     
     for i in submissions:
-        print(vars(i)) # member variables
+        # print(vars(i)) # member variables
         if i.stickied:
             continue
         text += '<pre>%s: <a href="%s">%s</a> </pre>' % (str(n), i.url, i.title)

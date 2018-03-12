@@ -1,6 +1,5 @@
 default:
-	export PYTHONPATH=$(PWD);
-	cd _src && python3 reddit_bot.py
+	export PYTHONPATH=$(PWD) && cd _src && python3 reddit_bot.py
 	
 install:
 	pip3 install -r requirements.txt
@@ -11,5 +10,4 @@ install-pip:
 	pip3 install --upgrade pip
 	
 test:
-	export PYTHONPATH=$(PWD);
-	cd _tests && pytest
+	export PYTHONPATH=$(PWD) && cd _tests && pytest

@@ -8,7 +8,14 @@ Get top submissions of various subreddits. Built for weekly updates.
 # HOW TO RUN
 
 ## SETTINGS
-In _settings folder, rename "**dummy_settings**" to "**settings**" and edit the fields below with the correct information.
+In _settings folder, rename "**dummy_settings**" to "**settings**" and edit the fields below with the correct information. To make it simpler on the command line:
+```git
+cp dummy_settings.py settings.py
+vi settings.py
+// do your changes here
+rm dummy_settings.py
+```
+
 ```python
 limit = 25
 subreddit = 'cscareerquestions'
