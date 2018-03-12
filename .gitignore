@@ -1,0 +1,12 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache
+
+# Folders
+sample/
+scrap/
+
+# Files
+settings.py
